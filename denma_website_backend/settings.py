@@ -22,7 +22,7 @@ SECRET_KEY = '^$u-wd^06l+x%jx8#up1e%x%@9!hl7s3o))fm#o1w6(%=gg3+i'
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG is an env variable of 0 in production, which means that this will fallback to 0 then False in production.
 # DEBUG does not exists as an env variable in development, it will fallback to 1 then True in development.
-# Check deploy/supervisor_profiles_api.conf for more details.
+# Check deploy/supervisor_denma_contact_form.conf for more details.
 DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
 ALLOWED_HOSTS = [

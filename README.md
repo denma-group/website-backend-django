@@ -78,10 +78,10 @@ pip install -r requirements.txt
 **While in a git bash command line inside the vagrant machine terminal, and while it is active**, run:
 
 ```commandline
-django-admin.py startproject profiles_project .
+django-admin.py startproject denma_website_backend .
 ```
 
-What this does is that it will run the `django-admin.py` script that will start a new project by running `startproject` and set a name of `profiles_project` in the specified location `.` (root folder). If a location is not specified, it will create a new sub-folder.
+What this does is that it will run the `django-admin.py` script that will start a new project by running `startproject` and set a name of `denma_website_backend` in the specified location `.` (root folder). If a location is not specified, it will create a new sub-folder.
 
 **2. Create a new Django app (within our project):**
 
@@ -90,10 +90,10 @@ A Django project can consist of one or more sub applications within a project th
 To create a sub-application within a project, run (*inside the vagrant machine terminal sync folder, and while it is active*):
 
 ```commandline
-python manage.py startapp profiles_api
+python manage.py startapp denma_contact_form
 ```
 
-Where `startapp` will create a new app, and `profiles_api` is used to set the name (and will appear as a new sub-folder).
+Where `startapp` will create a new app, and `denma_contact_form` is used to set the name (and will appear as a new sub-folder).
 
 **3. Enable an app within our project**:
 
@@ -111,7 +111,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',  # Django REST framework.
     'rest_framework.authtoken',  # Allows usage of authentication tokens out of the box with the REST framework.
-    'profiles_api', # Our Django created app.
+    'denma_contact_form', # Our Django created app.
 ]
 ```
 
@@ -169,7 +169,7 @@ To do this, go to the AWS website, click on the *Services* tab, go to the *EC2* 
    curl -sL https://raw.githubusercontent.com/rmolinamir/django-rest-api/master/deploy/setup.sh | sudo bash -
    ```
 6. Update the `ALLOWED_HOSTS` list inside `settings.py` to be able to remotely access the Django Admin Browsable API. Add the Public DNS (IPV4) address and the localhost (`'127.0.0.1'`).
-7. Run the update script on the server, by running the `deploy/update.sh` script (You have to move into the project's root directory, you can do this by running `cd ../../usr/local/apps/profiles-rest-api` in Windows 10). **Always do this to implement any change.**
+7. Run the update script on the server, by running the `deploy/update.sh` script (You have to move into the project's root directory, you can do this by running `cd ../../usr/local/apps/rest-api` in Windows 10). **Always do this to implement any change.**
 
 Hosted routes:
 
