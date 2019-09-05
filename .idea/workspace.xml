@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3a8605b-ba34-453b-9608-c4381880a3ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/denma_contact_form/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/denma_contact_form/migrations/0002_auto_20190905_0235.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/denma_contact_form/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/denma_contact_form/url.spy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/denma_subscribe_form/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/denma_subscribe_form/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/denma_contact_form/migrations/0003_auto_20190905_1300.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/denma_contact_form/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_contact_form/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activate.sh" beforeDir="false" afterPath="$PROJECT_DIR$/activate.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/denma_contact_form/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_contact_form/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/denma_contact_form/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_contact_form/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/denma_subscribe_form/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_subscribe_form/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/denma_subscribe_form/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_subscribe_form/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/denma_subscribe_form/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_subscribe_form/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/denma_website_backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_website_backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/denma_contact_form/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_contact_form/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runserver.sh" beforeDir="false" afterPath="$PROJECT_DIR$/runserver.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +33,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/denma_subscribe_form" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rober\Desktop\Denma\website-backend" />
       <recent name="C:\Users\rober\Desktop\Denma\website-backend\denma_subscribe_form" />
     </key>
   </component>
@@ -73,6 +66,7 @@
       <updated>1566773918190</updated>
       <workItem from="1566773919461" duration="3701000" />
       <workItem from="1567646000689" duration="8573000" />
+      <workItem from="1567687920732" duration="866000" />
     </task>
     <servers />
   </component>
