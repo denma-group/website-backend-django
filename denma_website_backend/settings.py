@@ -128,3 +128,23 @@ AUTH_USER_MODEL = 'denma_users.UserProfile'
 
 # Location where Django will store all of the necessary static files to run the browsable API.
 STATIC_ROOT = 'static/'
+
+# DEBUGGING
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'debug.log')
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
