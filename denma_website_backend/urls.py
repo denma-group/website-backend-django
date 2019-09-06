@@ -14,8 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+
+# Local
+from denma_contact_form.urls import urls as denma_contact_form_urls
+from denma_subscribe_form.urls import urls as denma_subscribe_form_urls
+
+router = DefaultRouter()
+
+# Routes from other apps.
+for routes in (denma_contact_form_urls, denma_subscribe_form_urls):
+    for (pattern, view, base_name) in routes:
+        router.register(pattern, view, base_name)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
 ]

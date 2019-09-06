@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-source ./activate.sh
-source ./runserver.sh
+source ./activate.bash
+source ./runserver.bash
