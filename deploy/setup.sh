@@ -39,7 +39,7 @@ supervisorctl restart denma-api
 # Configure nginx
 cp $PROJECT_BASE_PATH/deploy/nginx_denma-api.conf /etc/nginx/sites-available/denma-api.conf
 rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/denma-api.conf /etc/nginx/sites-enabled/api.conf
+ln -s /etc/nginx/sites-available/denma-api.conf /etc/nginx/sites-enabled/denma-api.conf
 systemctl restart nginx.service
 
 echo "DONE! :)"
