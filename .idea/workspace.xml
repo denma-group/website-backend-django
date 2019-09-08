@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3a8605b-ba34-453b-9608-c4381880a3ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/denma_website_backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/denma_website_backend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/nginx_denma-api.conf" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/nginx_denma-api.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/supervisor_denma-api.conf" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/supervisor_denma-api.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/update.sh" afterDir="false" />
-    </list>
+    <list default="true" id="f3a8605b-ba34-453b-9608-c4381880a3ce" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +92,7 @@
       <workItem from="1567732935133" duration="5476000" />
       <workItem from="1567776093822" duration="110000" />
       <workItem from="1567776283368" duration="103000" />
-      <workItem from="1567909842440" duration="3550000" />
+      <workItem from="1567909842440" duration="3630000" />
     </task>
     <servers />
   </component>
