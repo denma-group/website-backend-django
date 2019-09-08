@@ -3,9 +3,10 @@
 set -e
 
 # TODO: Set to URL of git repo.
-PROJECT_GIT_URL='https://github.com/rmolinamir/django-rest-api.git'
+PROJECT_GIT_URL='https://github.com/denma-group/website-backend-django.git'
 
-PROJECT_BASE_PATH='/usr/local/apps/rest-api'
+# Directory we're going the story the project in the server.
+PROJECT_BASE_PATH='/usr/local/apps/denma-api'
 
 echo "Installing dependencies..."
 apt-get update
@@ -30,15 +31,15 @@ $PROJECT_BASE_PATH/env/bin/python manage.py migrate
 $PROJECT_BASE_PATH/env/bin/python manage.py collectstatic --noinput
 
 # Configure supervisor
-cp $PROJECT_BASE_PATH/deploy/supervisor_denma_contact_form.conf /etc/supervisor/conf.d/denma_contact_form.conf
+cp $PROJECT_BASE_PATH/deploy/supervisor_api.conf /etc/supervisor/conf.d/api.conf
 supervisorctl reread
 supervisorctl update
-supervisorctl restart denma_contact_form
+supervisorctl restart api
 
 # Configure nginx
-cp $PROJECT_BASE_PATH/deploy/nginx_denma_contact_form.conf /etc/nginx/sites-available/denma_contact_form.conf
+cp $PROJECT_BASE_PATH/deploy/nginx_api.conf /etc/nginx/sites-available/api.conf
 rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/denma_contact_form.conf /etc/nginx/sites-enabled/denma_contact_form.conf
+ln -s /etc/nginx/sites-available/api.conf /etc/nginx/sites-enabled/api.conf
 systemctl restart nginx.service
 
 echo "DONE! :)"
