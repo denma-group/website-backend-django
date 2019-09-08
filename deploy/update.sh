@@ -2,11 +2,11 @@
 
 set -e
 
-PROJECT_BASE_PATH='/usr/local/apps/denma-api'
+PROJECT_BASE_PATH='/usr/local/apps/denma_api'
 
 git pull
 $PROJECT_BASE_PATH/env/bin/python manage.py migrate
 $PROJECT_BASE_PATH/env/bin/python manage.py collectstatic --noinput
-supervisorctl restart denma-api
+supervisorctl restart denma_api
 
 echo "DONE! :)"
